@@ -1,10 +1,10 @@
 const BASE_URL = process.env.BASE_URL || "";
 
 const endpoints = [
-  {
-    primary: "antara",
-    paths: ["terbaru", "politik", "hukum", "ekonomi", "bola", "olahraga", "humaniora", "lifestyle", "hiburan", "dunia", "tekno", "otomotif"],
-  },
+  // {
+  //   primary: "antara",
+  //   paths: ["terbaru", "politik", "hukum", "ekonomi", "bola", "olahraga", "humaniora", "lifestyle", "hiburan", "dunia", "tekno", "otomotif"],
+  // },
   {
     primary: "cnbc",
     paths: ["terbaru", "investment", "news", "market", "entrepreneur", "syariah", "tech", "lifestyle", "opini", "profil"],
@@ -35,7 +35,7 @@ const endpoints = [
   },
   {
     primary: "suara",
-    paths: ["terbaru", "bisnis", "bola", "lifestyle", "entertainment", "otomotif", "tekno", "health"],
+    paths: ["terbaru", "lifestyle", "entertainment", "otomotif", "tekno", "health"],
   },
   {
     primary: "tempo",
@@ -43,7 +43,7 @@ const endpoints = [
   },
   {
     primary: "tribun",
-    paths: ["terbaru", "bisnis", "superskor", "sport", "seleb", "lifestyle", "travel", "parapuan", "otomotif", "techno", "kesehatan"],
+    paths: ["terbaru", "seleb", "lifestyle", "parapuan", "otomotif", "techno", "kesehatan"],
   },
 ];
 
@@ -61,17 +61,12 @@ const endpointsOverview = endpoints.map((endpoint) => {
 
 const categoryMapping = {
   olahraga: ["bola", "sport", "sports", "superskor", "olahraga"],
-  teknologi: ["tekno", "tech", "technology", "techno", "creativelab"],
-  hiburan: ["entertainment", "hiburan", "seleb", "celebrity", "leisure"],
-  ekonomi: ["ekonomi", "bisnis", "market", "investment", "entrepreneur", "economy", "inforial"],
-  otomotif: ["otomotif"],
-  lifestyle: ["lifestyle", "gaya", "cantik", "parapuan", "event"],
-  kesehatan: ["health", "kesehatan", "sehat", "difabel"],
-  internasional: ["dunia", "internasional", "jakarta", "jateng", "daerah"],
-  nasional: ["nasional", "metro", "politik", "hukum", "news", "syariah", "opini"],
-  travel: ["travel", "jalan-jalan"],
-  humaniora: ["humaniora", "khazanah", "difabel"],
-  khas: ["khas"],
+  teknologi: ["tekno", "tech", "technology", "techno", "creativelab", "otomotif"],
+  hiburan: ["entertainment", "hiburan", "seleb", "celebrity", "leisure", "lifestyle", "gaya", "cantik", "parapuan", "event", "khas"],
+  ekonomi: ["ekonomi", "bisnis", "market", "investment", "entrepreneur", "economy", "inforial", "travel", "jalan-jalan"],
+  kesehatan: ["health", "kesehatan", "sehat", "humaniora", "khazanah", "difabel"],
+  internasional: ["dunia", "internasional"],
+  nasional: ["nasional", "metro", "politik", "hukum", "news", "syariah", "opini", "jakarta", "jateng", "daerah"],
   agama: ["islam"],
 };
 
